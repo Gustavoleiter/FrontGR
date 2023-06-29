@@ -1,0 +1,36 @@
+@model FrontGR.Models.CursoViewModel
+@{
+    ViewBag.Title = "Detalhes do Curso";
+}
+<h2>Detalhes do Personagem</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.NomeCurso)</dt>
+        <dd>@Html.DisplayFor(model => model.NomeCurso)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Descrição)</dt>
+        <dd>@Html.DisplayFor(model => model.Descrição)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.DataInicio)</dt>
+        <dd>@Html.DisplayFor(model => model.DataInicio)</dd>
+        
+        <dt>@Html.DisplayNameFor(model => model.DataTermino)</dt>
+        <dd>@Html.DisplayFor(model => model.DataTermino)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.TipoUrgencia)</dt>
+        <dd>@Html.DisplayFor(model => model.TipoUrgencia)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Usuario)</dt>
+        <dd>@Html.DisplayFor(model => model.Usuario)</dd>
+    </dl>
+
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id}) |
+    @Html.ActionLink("Retornar", "Index")
+</p>
+
